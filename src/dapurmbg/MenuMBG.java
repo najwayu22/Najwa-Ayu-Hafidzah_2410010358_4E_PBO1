@@ -1,12 +1,11 @@
 package dapurmbg;
 
 public class MenuMBG {
-
-    // Encapsulation
-    protected String kodeMenu;
-    protected String namaMenu;
-    protected String kategori;
-    protected int jumlahPorsi;
+   
+    private String kodeMenu;
+    private String namaMenu;
+    private String kategori;
+    private int jumlahPorsi;
 
     // Constructor kosong
     public MenuMBG() {
@@ -14,11 +13,7 @@ public class MenuMBG {
     }
 
     // Constructor berparameter
-    public MenuMBG(String kodeMenu,
-                   String namaMenu,
-                   String kategori,
-                   int jumlahPorsi) {
-
+    public MenuMBG(String kodeMenu, String namaMenu, String kategori, int jumlahPorsi) {
         this.kodeMenu = kodeMenu;
         this.namaMenu = namaMenu;
         this.kategori = kategori;
@@ -61,7 +56,7 @@ public class MenuMBG {
 
     // Method biasa
     public String tampilInfo() {
-
+        
         return "Kode Menu      : " + getKodeMenu()
                 + "\nNama Menu      : " + getNamaMenu()
                 + "\nKategori       : " + getKategori()
@@ -70,9 +65,7 @@ public class MenuMBG {
 
     // Overloading
     public String tampilInfo(String lokasi) {
-
-        return tampilInfo()
-                + "\nLokasi Dapur  : " + lokasi;
+        return tampilInfo() + "\nLokasi Dapur   : " + lokasi;
     }
 
 }
